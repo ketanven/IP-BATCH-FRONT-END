@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            color: #b22222;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="file"] {
+            margin-top: 5px;
+        }
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Registration Form</h2>
+        <form action="#" method="post">
+            <div class="radio-group">
+                <label><input type="radio" name="title" value="mr"> Mr.</label>
+                <label><input type="radio" name="title" value="mrs"> Mrs.</label>
+                <label><input type="radio" name="title" value="ms"> Ms.</label>
+            </div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <label for="address1">Mail Address1</label>
+            <input type="text" id="address1" name="address1">
+            
+            <label for="address2">Mail Address2</label>
+            <input type="text" id="address2" name="address2">
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+            
+            <label for="state">State</label>
+            <select id="state" name="state">
+                <option value="gujarat">Gujarat</option>
+                <!-- Add other states as needed -->
+            </select>
+            
+            <label for="zip">Zip</label>
+            <input type="text" id="zip" name="zip">
+            
+            <label for="photo">Upload Photo</label>
+            <input type="file" id="photo" name="photo">
+            
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile">
+            
+            <label>Languages known</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="languages" value="gujarati"> Gujarati</label>
+                <label><input type="checkbox" name="languages" value="hindi"> Hindi</label>
+                <label><input type="checkbox" name="languages" value="english"> English</label>
+                <label><input type="checkbox" name="languages" value="marathi"> Marathi</label>
+            </div>
+            
+            <label for="additionalInfo">Additional Information</label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
